@@ -33,7 +33,7 @@ app
     res.end(`
         ${users
           .map((user) => {
-            return `<p>${user.first_name} ${user.last_name} is ${user.age} years old</p>`;
+            return `<p>${user.first_name} ${user.last_name} is ${user.email} years old</p>`;
           })
           .join("")}
     `);
@@ -59,7 +59,7 @@ app
       {
         firstName: body.first,
         lastName: body.last,
-        age: body.email,
+        email: body.email,
       }
     );
 
