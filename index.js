@@ -47,19 +47,19 @@ app
     INSERT INTO User (
         first_name,
         last_name,
-        age,
+        email,
         date_added
     ) VALUES (
         @firstName,
         @lastName,
-        @age,
+        @email,
         NOW()
     )
 `,
       {
         firstName: body.first,
         lastName: body.last,
-        age: body.age,
+        age: body.email,
       }
     );
 
